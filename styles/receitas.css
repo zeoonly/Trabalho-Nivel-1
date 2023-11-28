@@ -1,0 +1,97 @@
+/* Reset de estilos padrão do navegador */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(160, 116, 35);
+    color: black;
+}
+
+header {
+    background-color: rgb(160, 116, 35);
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    background-color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main.receitas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.receita {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+}
+
+.receita img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.receita h2 {
+    color: #333;
+}
+
+.receita ul {
+    list-style: none;
+    padding: 0;
+}
+
+.receita li {
+    background-color: #f8f8f8;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.receita p {
+    color: #555;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

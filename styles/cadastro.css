@@ -1,0 +1,122 @@
+/* Reset de estilos padrão do navegador */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adicionado para garantir o box-sizing uniforme */
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(160, 116, 35);
+    color: black;
+    margin: 0; /* Removido o margin padrão do body */
+}
+
+header {
+    background-color: rgb(160, 116, 35);
+    text-align: center;
+    padding: 20px;
+    color: black;
+}
+
+.logo {
+    width: 120px; /* Aumentado o tamanho da logo */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0; /* Removido o margin padrão da ul */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+/* Estilos do formulário */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px; /* Aumentado o padding para melhorar a usabilidade */
+    margin-top: 10px; /* Ajustado o margin-top para melhor espaçamento */
+    margin-bottom: 15px; /* Ajustado o margin-bottom para melhor espaçamento */
+    box-sizing: border-box;
+    border: 1px solid rgb(160, 116, 35);
+    border-radius: 4px;
+}
+
+button {
+    padding: 12px 24px; /* Ajustado o padding para melhor aparência */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adicionada transição de cor de fundo */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor de fundo alterada no hover */
+}
+
+/* Rodapé */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos responsivos */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .logo {
+        width: 80px; /* Ajustado o tamanho da logo para dispositivos menores */
+    }
+}
